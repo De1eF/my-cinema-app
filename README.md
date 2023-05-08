@@ -1,5 +1,5 @@
-﻿# cinema-app
-Back end core for cinema aplications, provides endpoints to authenticat and authorize users and handle database <br>
+﻿# Cinema-App
+Back end core for cinema aplications. Provides endpoints that may be accessed from front end to authenticat and authorize users and handle database via spring web controllers. <br>
 <h2 tabindex="-1">﻿🛠️Functionality🛠️</h2>
  <ul dir="auto">
   <li>User registration and authentication</li>
@@ -22,11 +22,12 @@ Back end core for cinema aplications, provides endpoints to authenticat and auth
  In order to start using taxi service, user will need to go throgh a few steps first
  in MySQL WORKBENCH.
  <ul dir="auto">
-  <li>install <b>MySQL</b> and configure connection</li>
+  <li>Install <b>MySQL</b> and configure connection</li>
   <li>Configure <b>/resources/db.properties</b></li>
   <li>Configure Tomcat</li>
   <li>You will now have access to endpoints listed below</li>
-  <li>Users can build the project by executing 'mvn clean package' in terminal</li>
+  <li>Users can build the project by executing `mvn clean package` in terminal</li>
+  <li>On launch, application will have admin user embeded by default</li>
  </ul>
 <h2 tabindex="-1">﻿📡Structure📡</h2>
    Web structure
