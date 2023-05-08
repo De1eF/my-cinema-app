@@ -33,16 +33,16 @@ Back end core for cinema aplications. Provides endpoints that may be accessed fr
    Web structure
  <ul dir="auto">
   <li><b>/login</b> user authentication page, they will be redirected here unless authorized</li>
-  <li><b>/register</b> user may register to get access to more endpoints</li>
-  <li><b>/users/by-email</b> admin authorized users can get a user by their email</li>
-  <li><b>/cinema-halls</b> admin authorized users can send POST here with json in request body to add a cinema hall to database, anyone can send GET which will return all cinema-halls in database</li>
-  <li><b>/movies</b> admin authorized users can send POST here with json in request body to add a movie to database,  anyone can send GET which will return all movies in database</li>
-  <li><b>/movie-sessions</b> admin authorized users can send POST here with json in request body to add a movie session to database, anyone can send GET which will return all movie sessions in database</li>
-  <li><b>/movie-sessions/available</b> returns all non expiered movie sessions from database in json format</li>
-  <li><b>/movie-sessions/{Id}</b> PUT will update specific movie session acording to values in request body in json format, DELETE will irreversibly remove the movie session from database</li>
-  <li><b>/orders</b> only accessible to users, GET will return a history of all orders</li>
-  <li><b>/orders/complete</b> POST will place an order to db, and clear user's shopping cart</li>
-  <li><b>/shopping-carts/movie-sessions</b> PUT adds a ticket to user's shopping cart</li>
-  <li><b>/shopping-carts/by-user</b> GET returns user's shopping cart</li>
+  <li><b>/register</b> (USER/ADMIN) get access to more endpoints</li>
+  <li><b>/users/by-email</b> (ADMIN) get a user by their email</li>
+  <li><b>/cinema-halls</b> (ADMIN) send POST here with json in request body to add a cinema hall to database, anyone can send GET which will return all cinema-halls in database</li>
+  <li><b>/movies</b> (ADMIN) send POST here with json in request body to add a movie to database, (ADMIN/USER) send GET which will return all movies in database</li>
+  <li><b>/movie-sessions</b>(ADMIN) send POST here with json in request body to add a movie session to database, (ADMIN/USER) send GET which will return all movie sessions in database</li>
+  <li><b>/movie-sessions/available</b> (ADMIN/USER) return all non expiered movie sessions from database in json format</li>
+  <li><b>/movie-sessions/{Id}</b> (ADMIN) PUT will update specific movie session acording to values in request body in json format, (ADMIN) DELETE will irreversibly remove the movie session from database</li>
+  <li><b>/orders</b> (USER) GET will return a history of all orders</li>
+  <li><b>/orders/complete</b> (USER) POST will place an order to db, and clear user's shopping cart</li>
+  <li><b>/shopping-carts/movie-sessions</b> (USER) PUT adds a ticket to user's shopping cart</li>
+  <li><b>/shopping-carts/by-user</b> (USER/ADMIN) GET returns user's shopping cart</li>
  </ul>
  
