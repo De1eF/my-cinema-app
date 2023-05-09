@@ -50,5 +50,5 @@ Back end core for cinema aplications. Provides endpoints that may be accessed fr
  </ul>
   <h2 tabindex="-1">🖊️Authors🖊️</h2>
  <ul dir="auto">
-  <li>Budkevych (DeleF) Mykyta</li>
+  <li>Budkevych (DeleF) Mykyta <a href="https://www.linkedin.com/in/mykyta-budkevych-0a4381273/">LinkedIn</a></li>
  </ul>
