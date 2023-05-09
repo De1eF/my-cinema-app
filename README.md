@@ -1,5 +1,5 @@
 ﻿# Cinema-App
-Back end core for cinema aplications. Provides endpoints that may be accessed from front end to authenticat and authorize users and handle database via spring web controllers. <br>
+Back end core for cinema aplications. Provides endpoints that may be accessed from front end to authenticate and authorize users and handle database via spring web controllers. <br>
 <h2 tabindex="-1">﻿🛠️Functionality🛠️</h2>
  <ul dir="auto">
   <li>User registration and authentication</li>
@@ -27,7 +27,7 @@ Back end core for cinema aplications. Provides endpoints that may be accessed fr
   <li>Configure Tomcat</li>
   <li>You will now have access to endpoints listed below</li>
   <li>Users can build the project by executing `mvn clean package` in terminal</li>
-  <li>On launch, application will have admin user embeded by default</li>
+  <li>On launch, application will have admin user embeded by default (username: admin, password:1290)</li>
  </ul>
 <h2 tabindex="-1">﻿📡Structure📡</h2>
    Web structure
@@ -35,14 +35,17 @@ Back end core for cinema aplications. Provides endpoints that may be accessed fr
   <li><b>/login</b> user authentication page, they will be redirected here unless authorized</li>
   <li><b>/register</b> (USER/ADMIN) get access to more endpoints</li>
   <li><b>/users/by-email</b> (ADMIN) get a user by their email</li>
-  <li><b>/cinema-halls</b> (ADMIN) send POST here with json in request body to add a cinema hall to database, anyone can send GET which will return all cinema-halls in database</li>
-  <li><b>/movies</b> (ADMIN) send POST here with json in request body to add a movie to database, (ADMIN/USER) send GET which will return all movies in database</li>
-  <li><b>/movie-sessions</b>(ADMIN) send POST here with json in request body to add a movie session to database, (ADMIN/USER) send GET which will return all movie sessions in database</li>
+  <li><b>/cinema-halls</b> (ADMIN) POST with json in request body adds a cinema hall to database</li>
+ <li><b>/cinema-halls</b> (USER/ADMIN) GET returns all cinema-halls in database</li>
+  <li><b>/movies</b> (ADMIN) send POST here with json in request body to add a movie to database</li>
+ <li><b>/movies</b> (ADMIN/USER) send GET which will return all movies in database</li>
+  <li><b>/movie-sessions</b>(ADMIN) send POST here with json in request body to add a movie session to database
   <li><b>/movie-sessions/available</b> (ADMIN/USER) return all non expiered movie sessions from database in json format</li>
-  <li><b>/movie-sessions/{Id}</b> (ADMIN) PUT will update specific movie session acording to values in request body in json format, (ADMIN) DELETE will irreversibly remove the movie session from database</li>
+  <li><b>/movie-sessions/{Id}</b> (ADMIN) PUT will update specific movie session acording to values in request body in json format</li>
+ <li><b>/movie-sessions/{Id}</b> (ADMIN) DELETE will irreversibly remove the movie session from database</li>
   <li><b>/orders</b> (USER) GET will return a history of all orders</li>
   <li><b>/orders/complete</b> (USER) POST will place an order to db, and clear user's shopping cart</li>
   <li><b>/shopping-carts/movie-sessions</b> (USER) PUT adds a ticket to user's shopping cart</li>
-  <li><b>/shopping-carts/by-user</b> (USER/ADMIN) GET returns user's shopping cart</li>
+  <li><b>/shopping-carts/by-user</b> (USER) GET returns user's shopping cart</li>
  </ul>
  
