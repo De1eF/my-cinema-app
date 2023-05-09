@@ -48,4 +48,7 @@ Back end core for cinema aplications. Provides endpoints that may be accessed fr
   <li><b>/shopping-carts/movie-sessions</b> (USER) PUT adds a ticket to user's shopping cart</li>
   <li><b>/shopping-carts/by-user</b> (USER) GET returns user's shopping cart</li>
  </ul>
- 
+  <h2 tabindex="-1">🖊️Authors🖊️</h2>
+ <ul dir="auto">
+  <li>Budkevych (DeleF) Mykyta</li>
+ </ul>
